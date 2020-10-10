@@ -1,7 +1,7 @@
 # Data Structures
 ## &nbsp;&nbsp;Array
 ### &nbsp;&nbsp;&nbsp;&nbsp;Dynamic Array
-Implementation of [MyDynamicArray](../Turf/Data%20Structures/Array/MyDynamicArray.java) :
+Implementation of [MyDynamicArray](../Data%20Structures/Array/MyDynamicArray.java) :
 - [ ] size()
 - [ ] capacity()
 - [ ] is_empty()

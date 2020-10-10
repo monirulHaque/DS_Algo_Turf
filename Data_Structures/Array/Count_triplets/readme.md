@@ -4,17 +4,17 @@ Given an array of distinct integers. The task is to count all the triplets such 
 ### Example 1:
 
 #### Input:
-N = 4
+N = 4 <br />
 arr[] = {1, 5, 3, 2}
 #### Output: 
 2
 #### Explanation:
-There are 2 triplets: 
+There are 2 triplets: <br />
 1 + 2 = 3 and 3 +2 = 5 
 ### Example 2:
 
 #### Input: 
-N = 3
+N = 3 <br />
 arr[] = {2, 3, 4}
 #### Output: 0
 #### Explanation: 
@@ -27,4 +27,4 @@ Expected Auxiliary Space: O(1)
 
 ### Constraints:
 1 ≤ N ≤ 103
-1 ≤ arr[i] ≤ 105
+1 ≤ arr\[i\] ≤ 105

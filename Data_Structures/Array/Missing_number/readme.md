@@ -8,18 +8,18 @@ The first line of input contains an integer T denoting the number of test cases.
 Print the missing number in array.
 
 ### Constraints:
-1 ≤ T ≤ 200
-1 ≤ N ≤ 107
-1 ≤ C[i] ≤ 107
+1 ≤ T ≤ 200 <br>
+1 ≤ N ≤ 107 <br>
+1 ≤ C\[i\] ≤ 107 <br>
 
 ### Example:
 #### Input:
-2
-5
-1 2 3 5
-10
-1 2 3 4 5 6 7 8 10
+2 <br>
+5 <br>
+1 2 3 5 <br>
+10 <br>
+1 2 3 4 5 6 7 8 10 
 
 #### Output:
-4
-9
+4 <br />
+9 <br />

@@ -1,6 +1,8 @@
+import java.util.Objects;
+
 public class MyDynamicArray<T> {
-    T array[];
-    int indicator = -1;
+    private T array[];
+    private int indicator = -1; //it stays where the last item is put
 
     public MyDynamicArray() {
         array = (T[]) new Object[4];
@@ -38,7 +40,7 @@ public class MyDynamicArray<T> {
     public void push(T item) {
         //push item into the array.
         indicator++;
-        if (indicator > size()) resize(true);
+        if (indicator >= capacity()) resize(true);
         array[indicator] = item;
     }
     public void insert(int index, T item) {
@@ -62,16 +64,37 @@ public class MyDynamicArray<T> {
     }
     public T pop() {
         //remove from end and return the value
-        return null;
+        if (indicator < 0 ) throw new NullPointerException();
+        T item = array[indicator];
+        array[indicator] = null;
+        indicator--;
+        //when popping an item, if size is 1/4 of capacity, resize to half
+        if (size() <= capacity()/4) resize(false);
+        return item;
     }
-    public void delete(int index) {
+    public T delete(int index) {
         //delete item at index, shifting all trailing elements left
+        if (index < 0 || index > size()) throw new ArrayIndexOutOfBoundsException();
+        T item = array[index];
+        for (int i = index+1; i < size(); i++) {
+            array[i-1] = array[i];
+        }
+        indicator--;
+        //when popping an item, if size is 1/4 of capacity, resize to half
+        if (size() <= capacity()/4) resize(false);
+        return item;
     }
     public void remove(T item) {
         //looks for value and removes index holding it (even if in multiple places)
+        for (int i = 0; i < size(); i++) {
+            if (array[i].equals(item)) delete(i);
+        }
     }
     public int find(T item) {
         //looks for value and returns first index with that value, -1 if not found
+        for (int i = 0; i < size(); i++) {
+            if (array[i].equals(item)) return i;
+        }
         return -1;
     }
     private void resize(boolean enlarge) {
@@ -79,7 +102,23 @@ public class MyDynamicArray<T> {
         //when popping an item, if size is 1/4 of capacity, resize to half
         //if enlarge is true the array capacity gets doubled
         //if enlarge is false the array capacity get halved
+        int newCapacity;
+        newCapacity = enlarge?capacity()*2:capacity()/2;
+        T newArray[] = (T[]) new Object[newCapacity];
+        for (int i = 0; i < size() - 1; i++) {
+            newArray[i] = array[i];
+        }
+        array = newArray;
     }
 
-
+    @Override
+    public String toString() {
+        String s = "";
+        for (int i = 0; i < size(); i++) {
+            s += array[i];
+            if (i == size()-1) break;
+            s += " ";
+        }
+        return s;
+    }
 }

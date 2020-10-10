@@ -1,7 +1,8 @@
+Implementation of Data Structures and Algorithms along with interview questions appeared in giant software companies like Facebook, Google, Microsoft, Amazon, Adobe etc with efficient solve are being stored in this repository.
 # Data Structures
 ## Array
 ### Dynamic Array
-&nbsp;&nbsp; Implementation of [MyDynamicArray](Data_Structures/Array/MyDynamicArray.java) :
+Implementation of [MyDynamicArray](Data_Structures/Array/MyDynamicArray.java) :
 - [ ] size(): number of items in array
 - [ ] capacity(): number of items it can hold
 - [ ] is_empty(): check if the array has any items
@@ -15,3 +16,8 @@
 - [ ] find(item): looks for value and removes index holding it (even if in multiple places)
 - [ ] resize(): {private method} when you reach capacity, resize to double the size when popping an item, if size is 1/4 of capacity, resize to half
 - [ ] toString(): {overriden} prints all the elements following a space between them
+#### Interview questions
+1. [Find subarray of array with given sum](Data_Structures/Array/Subarray_with_given_sum/)
+2. [Find the missing number in array](Data_Structures/Array/Missing_number/)
+3. [Find the number of pairs in two arrays](Data_Structures/Array/Number_of_pairs/)
+4. [Count the triplets](Data_Structures/Array/Count_triplets/)

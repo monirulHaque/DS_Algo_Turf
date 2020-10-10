@@ -2,7 +2,7 @@ Implementation of Data Structures and Algorithms along with interview questions 
 # Data Structures
 ## Array
 ### Dynamic Array
-Implementation of [MyDynamicArray](Data_Structures/Array/MyDynamicArray.java) :
+Implementation of **[MyDynamicArray](Data_Structures/Array/MyDynamicArray.java)** :
 - [ ] size(): number of items in array
 - [ ] capacity(): number of items it can hold
 - [ ] is_empty(): check if the array has any items

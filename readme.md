@@ -1,7 +1,7 @@
 # Data Structures
 ## Array
-### &nbsp;&nbsp;Dynamic Array
-&nbsp;&nbsp;&nbsp;&nbsp;Implementation of [MyDynamicArray](Data_Structures/Array/MyDynamicArray.java) :
+### Dynamic Array
+&nbsp;&nbsp; Implementation of [MyDynamicArray](Data_Structures/Array/MyDynamicArray.java) :
 - [ ] size(): number of items in array
 - [ ] capacity(): number of items it can hold
 - [ ] is_empty(): check if the array has any items

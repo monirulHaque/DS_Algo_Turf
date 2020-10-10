@@ -32,7 +32,7 @@ public class MyDynamicArray<T> {
         if(indicator < 0) return true;
         return false;
     }
-    public T at(int index) throws Exception {
+    public T at(int index) {
         //returns item at given index, blows up if index out of bounds
         if (index < 0 || index >= size()) throw new ArrayIndexOutOfBoundsException();
         return array[index];

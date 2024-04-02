@@ -1,4 +1,5 @@
 # Maximum Sum Subarray Problem
+## Problem Statement
 Given an array of integers, find the contiguous subarray which has the largest sum and return its sum.
 
 Test Case 1:
@@ -18,7 +19,7 @@ Test Case 3:
 Input: [-2,-1]
 Output: 0
 ```
-Solutions:
+## Solutions
 - Python
     * **<a href='max_sum_bruteforce_ncube.py'>Brute Force - O(n<sup>3</sup>)</a>**
     * **<a href='max_sum_nsquare.py'>Slightly better than brute force - O(n<sup>2</sup>)</a>**

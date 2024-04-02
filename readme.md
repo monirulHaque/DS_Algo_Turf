@@ -17,7 +17,8 @@ Implementation of **[MyDynamicArray](Data_Structures/Array/MyDynamicArray.java)*
 - [ ] resize(): {private method} when you reach capacity, resize to double the size when popping an item, if size is 1/4 of capacity, resize to half
 - [ ] toString(): {overriden} prints all the elements following a space between them
 #### Interview questions
-1. [Find subarray of array with given sum](Data_Structures/Array/Subarray_with_given_sum/)
-2. [Find the missing number in array](Data_Structures/Array/Missing_number/)
-3. [Find the number of pairs in two arrays](Data_Structures/Array/Number_of_pairs/)
-4. [Count the triplets](Data_Structures/Array/Count_triplets/)
+1. [Maximum sum subarray](Problems_with_Solutions/Arrays/Max_Sum_Subarray/)
+2. [Find subarray of array with given sum](Problems_with_Solutions/Arrays/Subarray_with_given_sum/)
+3. [Find the missing number in array](Problems_with_Solutions/Arrays/Missing_number/)
+4. [Find the number of pairs in two arrays](Problems_with_Solutions/Arrays/Number_of_pairs/)
+5. [Count the triplets](Problems_with_Solutions/Arrays/Count_triplets/)

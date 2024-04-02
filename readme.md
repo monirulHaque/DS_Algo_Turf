@@ -10,7 +10,7 @@ start address + (element size × n)
 The time complexity of accessing an element in array is O(1); that means it's instantaneous.
 
 ### Dynamic Array
-Implementation of **[MyDynamicArray](Data_Structures/Array/MyDynamicArray.java)** :
+Implementation of MyDynamicArray **[(Java)](Data_Structures/Array/MyDynamicArray.java)** :
 - [x] size(): number of items in array
 - [x] capacity(): number of items it can hold
 - [x] is_empty(): check if the array has any items
@@ -24,7 +24,7 @@ Implementation of **[MyDynamicArray](Data_Structures/Array/MyDynamicArray.java)*
 - [x] find(item): looks for value and removes index holding it (even if in multiple places)
 - [x] resize(): {private method} when you reach capacity, resize to double the size when popping an item, if size is 1/4 of capacity, resize to half
 - [x] toString(): {overriden} prints all the elements following a space between them
-- [] Doc (To be added)
+- [ ] Doc (To be added)
 
 ### Circular Array
 To be implemented. 

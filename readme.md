@@ -1,4 +1,4 @@
-This is a repository Data Structures and Algorithms notes with my understating of concepts,  implementations and common interview problems with my solutions.
+This is a repository Data Structures and Algorithms notes with my understating of concepts, implementations and common interview problems with my solutions.
 # Data Structures
 Data structures are ways of organizing and storing data in a computer's memory so that it can be efficiently accessed and modified.
 ## Array
@@ -24,7 +24,7 @@ Implementation of MyDynamicArray **[(Java)](Data_Structures/Array/MyDynamicArray
 - [x] find(item): looks for value and removes index holding it (even if in multiple places)
 - [x] resize(): {private method} when you reach capacity, resize to double the size when popping an item, if size is 1/4 of capacity, resize to half
 - [x] toString(): {overriden} prints all the elements following a space between them
-- [ ] Doc (To be added)
+- [x] javadocs
 
 ### Circular Array
 To be implemented. 

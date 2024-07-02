@@ -1,12 +1,27 @@
 import java.util.Objects;
 
+/**
+ * A Dynamic Array class with Java Generics
+ * It also has almost every kind of useful methods
+ */
 public class MyDynamicArray<T> {
     private T array[];
     private int indicator = -1; //it stays where the last item is put
 
+    /**
+     * Constructor for Initializing an empty Dynamic Array
+     * The default size of the Dynamic Array is 4
+     */
     public MyDynamicArray() {
         array = (T[]) new Object[4];
     }
+
+    /**
+     * Constructor for Initializing a Dynamic Array based on a given array
+     * The size of the Dynamic Array will be a power of two (the next nearest of the original array size)
+     * 
+     * @param arr the array to initialize the Dynamic Array with
+     */
     public MyDynamicArray(T arr[]) {
         //Finding the power of 2 equal or greater than the size of arr
         int length = arr.length;
@@ -19,33 +34,67 @@ public class MyDynamicArray<T> {
             array[i] = arr[i];
         }
     }
+
+    /**
+     * Returns the number of elements in the Dynamic Array.
+     * 
+     * @return the number of elements in the Dynamic Array
+     */
     public int size() {
-        //number of items
         return indicator+1;
     }
+
+    /**
+     * Returns the number of elements the Dynamic Array can hold.
+     * 
+     * @return the capacity of the Dynamic Array
+     */
     public int capacity() {
-        //number of items it can hold
         return array.length;
     }
+
+    /**
+     * Checks if the Dynamic Array has any elements.
+     * 
+     * @return true if the Dynamic Array is empty, false otherwise
+     */
     public boolean is_empty() {
-        //check if the array has any items
         if(indicator < 0) return true;
         return false;
     }
+
+    /**
+     * Returns the element at the specified position in the Dynamic Array.
+     * 
+     * @param index the index of the element to return
+     * @return the element at the specified position
+     * @throws ArrayIndexOutOfBoundsException if the index is out of range
+     */
     public T at(int index) {
-        //returns item at given index, blows up if index out of bounds
         if (index < 0 || index >= size()) throw new ArrayIndexOutOfBoundsException();
         return array[index];
     }
+
+    /**
+     * Appends the specified element to the end of the Dynamic Array.
+     * 
+     * @param item the element to be appended
+     */
     public void push(T item) {
-        //push item into the array.
         indicator++;
         if (indicator >= capacity()) resize(true);
         array[indicator] = item;
     }
+
+    /**
+     * Inserts the specified element at the specified position in the Dynamic Array.
+     * Shifts the element currently at that position (if any) and any subsequent elements to the right.
+     * 
+     * @param index the index at which the specified element is to be inserted
+     * @param item the element to be inserted
+     * @throws ArrayIndexOutOfBoundsException if the index is out of range
+     */
     public void insert(int index, T item) {
-        /*inserts item at index, shifts that index's value
-        and trailing elements to the right*/
         if (index < 0 || index > size()) throw new ArrayIndexOutOfBoundsException();
         if (size() == capacity()) resize(true);
         T temp = array[index];
@@ -58,10 +107,23 @@ public class MyDynamicArray<T> {
         array[size()] = temp;
         indicator++;
     }
+
+    /**
+     * Inserts the specified element at the beginning of the Dynamic Array.
+     * It inserts at index 0; the opposite of push method.
+     * 
+     * @param item the element to be inserted
+     */
     public void prepend(T item) {
-        //insert above at index 0, opposite of push
         insert(0, item);
     }
+
+    /**
+     * Removes and returns the last element from the Dynamic Array.
+     * 
+     * @return the last element from the Dynamic Array
+     * @throws NullPointerException if the Dynamic Array is empty
+     */
     public T pop() {
         //remove from end and return the value
         if (indicator < 0 ) throw new NullPointerException();
@@ -72,6 +134,15 @@ public class MyDynamicArray<T> {
         if (size() <= capacity()/4) resize(false);
         return item;
     }
+
+    /**
+     * Removes and returns the element at the specified position in the Dynamic Array.
+     * Shifts any subsequent elements to the left.
+     * 
+     * @param index the index of the element to be removed
+     * @return the element that was removed from the Dynamic Array
+     * @throws ArrayIndexOutOfBoundsException if the index is out of range
+     */
     public T delete(int index) {
         //delete item at index, shifting all trailing elements left
         if (index < 0 || index > size()) throw new ArrayIndexOutOfBoundsException();
@@ -84,12 +155,26 @@ public class MyDynamicArray<T> {
         if (size() <= capacity()/4) resize(false);
         return item;
     }
+
+    /**
+     * Removes all occurrences of the specified element from the Dynamic Array.
+     * 
+     * @param item the element to be removed
+     */
     public void remove(T item) {
         //looks for value and removes index holding it (even if in multiple places)
         for (int i = 0; i < size(); i++) {
             if (array[i].equals(item)) delete(i);
         }
     }
+
+    /**
+     * Returns the index of the first occurrence of the specified element in the Dynamic Array,
+     * or -1 if this Dynamic Array does not contain the element.
+     * 
+     * @param item the element to search for
+     * @return the index of the first occurrence of the specified element, or -1 if not found
+     */
     public int find(T item) {
         //looks for value and returns first index with that value, -1 if not found
         for (int i = 0; i < size(); i++) {
@@ -97,11 +182,17 @@ public class MyDynamicArray<T> {
         }
         return -1;
     }
+
+    /**
+     * Resizes the Dynamic Array.
+     * When the Dynamic Array reaches capacity, resize method is used to double the capacity
+     * When popping an item, if size is 1/4 of capacity, the method is used to resize to half
+     * If enlarge is true, the array capacity gets doubled.
+     * If enlarge is false, the array capacity gets halved.
+     * 
+     * @param enlarge whether to enlarge or shrink the array
+     */
     private void resize(boolean enlarge) {
-        //when you reach capacity, resize to double the size
-        //when popping an item, if size is 1/4 of capacity, resize to half
-        //if enlarge is true the array capacity gets doubled
-        //if enlarge is false the array capacity get halved
         int newCapacity;
         newCapacity = enlarge?capacity()*2:capacity()/2;
         T newArray[] = (T[]) new Object[newCapacity];
@@ -111,6 +202,11 @@ public class MyDynamicArray<T> {
         array = newArray;
     }
 
+    /**
+     * Returns a string representation of the Dynamic Array.
+     * 
+     * @return string representation of the Dynamic Array
+     */
     @Override
     public String toString() {
         String s = "";

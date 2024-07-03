@@ -1,4 +1,15 @@
 # Maximum Sum Subarray Problem
+![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=fff&style=flat)
+![Amazon Badge](https://img.shields.io/badge/Amazon-F90?logo=amazon&logoColor=fff&style=flat)
+![Apple Badge](https://img.shields.io/badge/Apple-000?logo=apple&logoColor=fff&style=flat)
+![Microsoft Badge](https://img.shields.io/badge/Microsoft-5E5E5E?logo=microsoft&logoColor=fff&style=flat)
+![Adobe Badge](https://img.shields.io/badge/Adobe-F00?logo=adobe&logoColor=fff&style=flat)
+![Google Badge](https://img.shields.io/badge/Google-4285F4?logo=google&logoColor=fff&style=flat)
+![Cisco Badge](https://img.shields.io/badge/Cisco-1BA0D7?logo=cisco&logoColor=fff&style=flat)
+![Uber Badge](https://img.shields.io/badge/Uber-000?logo=uber&logoColor=fff&style=flat)
+![Oracle Badge](https://img.shields.io/badge/Oracle-F80000?logo=oracle&logoColor=fff&style=flat)
+![Samsung Badge](https://img.shields.io/badge/Samsung-1428A0?logo=samsung&logoColor=fff&style=flat)
+![Facebook Badge](https://img.shields.io/badge/Facebook-0866FF?logo=facebook&logoColor=fff&style=flat)
 ## Problem Statement
 Given an array of integers, find the contiguous subarray which has the largest sum and return its sum.
 

@@ -35,6 +35,7 @@ To be implemented.
 - [Find the missing number in array](Problems_with_Solutions/Arrays/Missing_number/)
 - [Find the number of pairs in two arrays](Problems_with_Solutions/Arrays/Number_of_pairs/)
 - [Count the triplets](Problems_with_Solutions/Arrays/Count_triplets/)
+- [Is Unique](Problems_with_Solutions/Arrays/Is_Unique)
 
 ## LinkedLists
 To be added.

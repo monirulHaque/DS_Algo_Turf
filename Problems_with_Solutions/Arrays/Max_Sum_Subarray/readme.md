@@ -47,3 +47,7 @@ Input: [-2,1,-3,4,-1,2,1,-5,4]
 Output: 3 6
 ```
 Explanation: The subarray [4,-1,2,1] has the largest sum 6. It starts at index 3 and ends at index 6.
+
+### Solutions
+- Python
+    * **<a href="max_sum_followup1_kadanes_slidingwindow_n.py">Kadane's Sliding Window - O(n)</a>** 

@@ -30,7 +30,7 @@ Test Case 3:
 Input: [-2,-1]
 Output: 0
 ```
-## Solutions
+### Solutions
 - Python
     * **<a href='max_sum_bruteforce_ncube.py'>Brute Force - O(n<sup>3</sup>)</a>**
     * **<a href='max_sum_nsquare.py'>Slightly better than brute force - O(n<sup>2</sup>)</a>**
@@ -48,6 +48,6 @@ Output: 3 6
 ```
 Explanation: The subarray [4,-1,2,1] has the largest sum 6. It starts at index 3 and ends at index 6.
 
-### Solutions
+#### Solutions
 - Python
     * **<a href="max_sum_followup1_kadanes_slidingwindow_n.py">Kadane's Sliding Window - O(n)</a>** 

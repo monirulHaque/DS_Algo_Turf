@@ -38,9 +38,21 @@ Common Complexity Categories:
 <img src="Media/Big-O_CheatSheet.png">
 </p>
 
-# Data Structures
-Data structures are ways of organizing and storing data in a computer's memory so that it can be efficiently accessed and modified.
-## Array
+# Programming Techniques
+## Recursion and Backtracking
+## Divide and Conquer
+## Bit Manipulation
+## Two Pointers
+## Sliding Window
+## Greedy
+## Dynamic Programming
+
+
+# Data Structures and Algorithms
+Data structures are ways of organizing and storing data in a computer's memory so that it can be efficiently accessed and modified. </br>
+An algorithm is a sequence of computational steps that transform the input into the output. 
+## Arrays and Hash Tables
+### Array 
 An array is the simplest way to store multiple elements in memory. It allocates a continuous block of memory and stores the elements sequentially. <br/><br/>
 
 Each element occupies the same amount of space. To access the nth element in the array, processor calculates its memory address using a formula: <br/>
@@ -48,7 +60,7 @@ Each element occupies the same amount of space. To access the nth element in the
 <br/><br/>
 The time complexity of accessing an element in array is *O(1)*; that means it's instantaneous.
 
-### Dynamic Array
+#### Dynamic Array
 Implementation of MyDynamicArray **[(Java)](Data_Structures/Array/MyDynamicArray.java)**:
 - [x] size(): number of items in array
 - [x] capacity(): number of items it can hold
@@ -65,16 +77,58 @@ Implementation of MyDynamicArray **[(Java)](Data_Structures/Array/MyDynamicArray
 - [x] toString(): {overriden} prints all the elements following a space between them
 - [x] javadocs
 
-### Circular Array
+#### Circular Array
 To be implemented. 
 
-#### Interview questions
+### Hash Table
+To be added.
+
+## LinkedLists
+To be added.
+### Singly LinkedList
+To be added. Dummy Headed and non-dummy headed implementations.
+### Doubly LinkedList
+To be added. Dummy Headed and non-dummy headed implementations.
+### Skip List
+## Stack
+## Queue
+### Priority Queue
+## Graph
+## Tree
+### Binary Search Trees
+### Red Black Trees
+## Heap
+
+# Algorithms
+## Sorting Algorithms
+### Bogo Sort
+### Bubble Sort
+### Selection Sort
+### Insertion Sort
+### Count Sort
+### Merge Sort
+### Quick Sort
+### Heap Sort
+### Tree Sort
+### Bucket Sort
+### Radix Sort
+### Tim Sort
+### Shell Sort
+
+## Searching Algorithms
+### Linear Search
+### Binary Search
+### Ternary Search
+
+## Array Algorithms
+### Kadane's Algorithms
+### Prefix Sum
+
+# Interview questions
+## Arrays and Hash Tables
 - [Maximum Sum Subarray](Problems_with_Solutions/Arrays/Max_Sum_Subarray/)
 - [Find subarray of array with given sum](Problems_with_Solutions/Arrays/Subarray_with_given_sum/)
 - [Find the missing number in array](Problems_with_Solutions/Arrays/Missing_number/)
 - [Find the number of pairs in two arrays](Problems_with_Solutions/Arrays/Number_of_pairs/)
 - [Count the triplets](Problems_with_Solutions/Arrays/Count_triplets/)
 - [Is Unique](Problems_with_Solutions/Arrays/Is_Unique)
-
-## LinkedLists
-To be added.

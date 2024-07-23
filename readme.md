@@ -107,6 +107,10 @@ To be added. Dummy Headed and non-dummy headed implementations.
 ### Insertion Sort
 ### Count Sort
 ### Merge Sort
+#### Implementations
+- Python
+  * **<a href='merge_sort_iterative.py'>Merge Sort Iterative</a>**
+  * **<a href='merge_sort_recursive.py'>Merge Sort Recursive</a>**
 ### Quick Sort
 ### Heap Sort
 ### Tree Sort
@@ -118,6 +122,9 @@ To be added. Dummy Headed and non-dummy headed implementations.
 ## Searching Algorithms
 ### Linear Search
 ### Binary Search
+#### Implementations
+- Python
+  * **<a href='binary_search_recursive.py'>Binary Search Recursive</a>**
 ### Ternary Search
 
 ## Array Algorithms
@@ -127,6 +134,7 @@ To be added. Dummy Headed and non-dummy headed implementations.
 # Interview questions
 ## Arrays and Hash Tables
 - [Maximum Sum Subarray](Problems_with_Solutions/Arrays/Max_Sum_Subarray/)
+- [Two Sum](Problems_with_Solutions/Arrays/Two_Sum)
 - [Find subarray of array with given sum](Problems_with_Solutions/Arrays/Subarray_with_given_sum/)
 - [Find the missing number in array](Problems_with_Solutions/Arrays/Missing_number/)
 - [Find the number of pairs in two arrays](Problems_with_Solutions/Arrays/Number_of_pairs/)

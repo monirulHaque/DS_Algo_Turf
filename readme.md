@@ -124,6 +124,7 @@ To be added. Dummy Headed and non-dummy headed implementations.
 ### Binary Search
 #### Implementations
 - Python
+  * **<a href='binary_search_iterative.py'>Binary Search Iterative</a>**
   * **<a href='binary_search_recursive.py'>Binary Search Recursive</a>**
 ### Ternary Search
 

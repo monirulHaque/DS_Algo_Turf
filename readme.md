@@ -15,6 +15,7 @@ Types of Asymptotic Notations:
 - ***O* (Big-O Notation)**: Worst Case Complexity
 - ***Ω* (Omega Notation)**: Best Case Complexity
 - ***ϴ* (Theta Notation)**: Average Case Complexity
+</br>
 Big-O notation is the most important one because if my algorithm runs good in the worst case scenerio, it will definitely run good in the average and best case scenerio. Basically Big-O notation indicates the rate of growth. We focus on the most frequently performed operations, often called dominant operations, while leaving some uncounted. Most of the times addition, subtraction, multiplication, swapping, printing etc are the dominant operations.
 
 Common Complexity Categories:
@@ -38,14 +39,14 @@ Common Complexity Categories:
 <img src="Media/Big-O_CheatSheet.png">
 </p>
 
-# Programming Techniques
+<!-- # Programming Techniques
 ## Recursion and Backtracking
 ## Divide and Conquer
 ## Bit Manipulation
 ## Two Pointers
 ## Sliding Window
 ## Greedy
-## Dynamic Programming
+## Dynamic Programming -->
 
 
 # Data Structures and Algorithms

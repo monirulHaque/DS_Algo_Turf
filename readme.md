@@ -1,5 +1,4 @@
-This is a repository Data Structures and Algorithms notes with my understating of concepts, implementations and common interview problems with my solutions. <br>
-I'm still confused about the structure I should follow to organize this repository.
+This is a repository Data Structures and Algorithms notes with my understating of concepts, implementations and common interview problems with my solutions.
 
 # Asymptotic Analysis
 Resources considered in Algorithm Analysis:
